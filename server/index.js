@@ -43,22 +43,16 @@ app.use("/user", userRouter);
 
 async function main() {
   try {
-    await mongoose.connect(MONGO_URL, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+    await mongoose.connect(MONGO_URL);
     console.log("Connected to MongoDB");
 
     app.listen(PORT, () => {
-      console.log(` Server running on port ${PORT}`);
+      console.log(`Server running on port ${PORT}`);
     });
   } catch (err) {
-    console.error(" MongoDB connection error:", err.message);
+    console.error("MongoDB connection error:", err.message);
   }
 }
 
 main();
-
-
-
 
