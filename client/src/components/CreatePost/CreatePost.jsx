@@ -14,7 +14,7 @@ const CreatePost = () => {
   const [caption, setCaption] = useState('')
   const myProfile = useSelector(state => state.AppConfig.myProfile);
 
-  console.log(myProfile);
+  // console.log(myProfile);
 
 
   const handleImageChange = (e) => {
@@ -25,7 +25,7 @@ const CreatePost = () => {
     fileReader.onload = () => {
       if (fileReader.readyState === fileReader.DONE) {
         setPostImg(fileReader.result)
-        console.log("Image base64 result:", fileReader.result)
+        // console.log("Image base64 result:", fileReader.result)
       }
     }
   }
@@ -42,7 +42,7 @@ const CreatePost = () => {
         caption,
         image: postImg, // backend expects 'image' key
       })
-      console.log('Post successful:', result.data)
+      // console.log('Post successful:', result.data)
 
       dispatch(getUserProfile({
         userId: myProfile?._id

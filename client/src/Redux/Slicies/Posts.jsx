@@ -24,7 +24,7 @@ export const likeAndUnlikePost = createAsyncThunk("posts/likeAndUnlike",
     try {
       thunkAPI.dispatch(setLoading(true));
       const response = await clientAxios.post("posts/like", { postId });
-      console.log("Like response:", response.data);
+      // console.log("Like response:", response.data);
       return response.data; // Return full response
     } catch (e) {
       console.error("Like Error:", e.response?.data || e.message);
@@ -56,13 +56,13 @@ const PostsSlice = createSlice({
       })
       .addCase(likeAndUnlikePost.fulfilled, (state, action) => {
         const updatedPost = action.payload?.result?.post;
-        console.log("Updated post from like:", updatedPost);
+        // console.log("Updated post from like:", updatedPost);
 
         if (updatedPost && state?.userProfile?.result?.posts) {
           const index = state.userProfile.result.posts.findIndex(item => item._id === updatedPost._id);
           if (index !== -1) {
             state.userProfile.result.posts[index] = updatedPost;
-            console.log("Post updated in state at index:", index);
+            // console.log("Post updated in state at index:", index);
           }
         }
       })
