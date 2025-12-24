@@ -1,0 +1,119 @@
+  .Profile {
+    text-decoration: none;
+    margin-top: 0.5rem;
+  }
+
+  .Container {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .Container {
+    display: flex;
+    gap: 1.5rem;
+    height: calc(100vh - 10px);
+  }
+
+  .left {
+    width: 60%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .left::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .left::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .left::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+
+  .right {
+
+    width: 40%;
+    margin-top: 3rem;
+    padding: 20px;
+    height: calc(100vh - 70px);
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .right::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .right::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .right::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+
+  .right .following {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  .profileimg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4px;
+    text-align: center;
+  }
+
+  .profileimg .UserImage {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+  }
+
+  .Username,
+  .followerInfo {
+    margin-top: 12px;
+    text-align: center;
+  }
+
+  .followerInfo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .profileBtn {
+    display: flex;
+    gap: 5px;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 4px;
+    justify-content: center;
+  }
+
+  .follow {
+    border: 2px solid rgb(84, 98, 225);
+    background-color: blueviolet;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 4px;
+  }
+
+  .ProfileUpdate {
+    border: 2px solid black;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.5rem;
+  }

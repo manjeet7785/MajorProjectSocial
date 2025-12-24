@@ -1,0 +1,61 @@
+.Navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  border-bottom: 1px solid rgb(230, 230, 230);
+  background-color: white;
+}
+
+.Container1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Container1 .banner {
+  margin-left: 5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.right-side .profile {
+  cursor: pointer;
+}
+
+.right-side .logout {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .Navbar {
+    padding: 0 10px;
+  }
+
+  .Container1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .Container1 .banner {
+
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .right-side {
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,47 @@
+.Post {
+  border: 1px solid rgb(245, 241, 241);
+  margin-top: 20px;
+  border-radius: 4px;
+
+  .heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 60px;
+    padding: 20px;
+    cursor: pointer;
+  }
+
+
+  .content {
+    height: 400px;
+
+
+  }
+}
+
+.bgimg {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.footer {
+  padding: 20px;
+
+  .likes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+  }
+
+  .icons {
+    font-size: 1.5rem;
+  }
+
+  .iconsColor {
+    font-size: 1.6rem;
+    color: red;
+  }
+}

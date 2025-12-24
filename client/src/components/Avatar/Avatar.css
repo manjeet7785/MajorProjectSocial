@@ -1,0 +1,18 @@
+.Avatar {
+  height: 40px;
+  width: 40px;
+
+}
+
+.Avatar-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.Avatar-img:hover {
+  cursor: pointer;
+}

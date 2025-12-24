@@ -1,0 +1,162 @@
+:root {
+  --bg: #f5f7fb;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --accent: #2563eb;
+  --accent-2: #3b82f6;
+  --border: #e6e9ee;
+  --radius: 10px;
+}
+
+* {
+  box-sizing: border-box
+}
+
+.box {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background: var(--bg);
+}
+
+.Sbox {
+  width: 100%;
+  max-width: 80%;
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(16, 24, 40, 0.08);
+  border: 1px solid var(--border);
+}
+
+.Sbox .heading {
+  color: #0f172a;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+}
+
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.Sbox {
+  width: 100%;
+  max-width: min(800px, 80%);
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(16, 24, 40, 0.08);
+  border: 1px solid var(--border);
+}
+
+label {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 6px
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  outline: none;
+  font-size: 0.95rem;
+  background: transparent;
+  transition: box-shadow .15s ease, border-color .15s ease;
+}
+
+.img-preview {
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.08)
+}
+
+input[disabled],
+button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed
+}
+
+button {
+  margin-top: 6px;
+  padding: 10px 14px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 9999px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+button:hover {
+  background: var(--accent-2)
+}
+
+.checking {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: var(--muted)
+}
+
+.checking a {
+  color: var(--accent);
+  font-weight: 600
+}
+
+.hint {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-top: 6px
+}
+
+@media (max-width:480px) {
+  .Sbox {
+    padding: 18px
+  }
+
+  .form {
+    gap: 8px
+  }
+
+  input,
+  textarea {
+    padding: 10px
+  }
+
+  .Sbox .heading {
+    font-size: 0.85rem
+  }
+}
+
+@media (min-width: 640px) {
+  .form-row {
+    grid-template-columns: repeat(2, 1fr)
+  }
+
+  .col-full {
+    grid-column: span 2
+  }
+}

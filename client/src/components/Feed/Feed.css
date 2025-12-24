@@ -1,0 +1,149 @@
+.Feed {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 120px);
+  overflow: hidden;
+}
+
+.create-post {
+  width: 100vw !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  margin-bottom: 1.5rem;
+}
+
+.Container {
+  display: flex;
+  height: calc(100vh - 120px);
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.left {
+  width: 60%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.right {
+  width: 40%;
+  height: 100%;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #fff;
+}
+
+.left::-webkit-scrollbar,
+.right::-webkit-scrollbar {
+  width: 6px;
+}
+
+.left::-webkit-scrollbar-track,
+.right::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.left::-webkit-scrollbar-thumb,
+.right::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 10px;
+}
+
+.following {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.title,
+.suggestion {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 1rem 0;
+}
+
+@media (max-width: 768px) {
+  .Feed {
+    width: 100vw !important;
+    min-height: 100vh !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .create-post {
+    width: 100vw !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    margin-bottom: 1rem;
+  }
+
+  .Container {
+    flex-direction: column !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    gap: 1rem;
+  }
+
+  .left,
+  .right {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    height: auto;
+    margin: 0 !important;
+    padding: 12px 0 !important;
+
+  }
+
+  .right {
+    position: static !important;
+    padding: 12px 0 !important;
+  }
+
+  .following {
+    gap: 0.75rem;
+    padding: 0 12px;
+
+  }
+
+  .title,
+  .suggestion {
+    font-size: 1.1rem;
+    padding-left: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .left,
+  .right {
+    padding: 8px 0 !important;
+  }
+
+  .following {
+    padding: 0 8px;
+  }
+}
+
+@media (max-width: 360px) {
+
+  .left,
+  .right {
+    padding: 4px 0 !important;
+  }
+
+  .following {
+    padding: 0 4px;
+  }
+}

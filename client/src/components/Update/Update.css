@@ -1,0 +1,144 @@
+.update {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f2f5;
+  padding: 20px;
+}
+
+.updateContainer {
+  display: flex;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  gap: 40px;
+}
+
+.leftUpdate {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-user-img {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.labelImg {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.labelImg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 4px solid #4461f2;
+  transition: all 0.3s ease;
+}
+
+.labelImg img:hover {
+  filter: brightness(0.8);
+}
+
+.inputImg {
+  display: none;
+}
+
+.rightUpdate {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.right-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+.right-form input {
+  padding: 12px 15px;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+/* Placeholder visibility fix */
+.right-form input::placeholder {
+  color: #210a0a;
+  opacity: 1;
+
+}
+
+.right-form input:focus {
+  border-color: #4461f2;
+}
+
+/* Buttons Styling */
+.Submit {
+  background-color: #4461f2;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.Submit:hover {
+  background-color: #364fc7;
+}
+
+.DeleteBTN {
+  background-color: transparent;
+  color: #ef4444;
+  padding: 10px;
+  border: 1px solid #ef4444;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.DeleteBTN:hover {
+  background-color: #ef4444;
+  color: white;
+}
+
+/* --- Responsive Design for Mobile --- */
+@media screen and (max-width: 650px) {
+  .updateContainer {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .leftUpdate {
+    margin-bottom: 10px;
+  }
+
+  .rightUpdate {
+    width: 100%;
+  }
+}

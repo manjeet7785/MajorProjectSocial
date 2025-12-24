@@ -1,0 +1,73 @@
+.Login {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Login-box {
+  width: 400px;
+  height: 400px;
+  padding: 40px;
+  position: relative;
+  background: #ffffff;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+  border-radius: 10px;
+}
+
+.Login-box .heading {
+  color: #333;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+label,
+input {
+  display: block;
+  width: 100%;
+}
+
+input {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  font-size: 16px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+button {
+  padding: 10px 20px;
+  background: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #555;
+}
+
+.SignUp {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.SignUp a {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #002aff;
+  text-decoration: none;
+}
+
+p {
+  margin-top: 5px;
+}
