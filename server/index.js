@@ -26,7 +26,7 @@ cloudinary.config({
 
 
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: "https://social-media-apna.netlify.app",
   credentials: true,
 }));
 app.use(morgan("dev"));
